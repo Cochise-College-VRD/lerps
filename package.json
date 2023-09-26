@@ -2,5 +2,12 @@
   "name": "com.cochisecollege.lerps",
   "version": "0.0.1",
   "displayName": "Lerps",
-  "description": "Lots of useful Lerp functionality"
+  "description": "Lots of useful Lerp functionality",
+
+  "author":
+  {
+	  "name": "Tim McDaniel",
+	  "email": "vrdprogram@cochise.edu",
+	  "url": "https://cochise.edu"
+  }
 }

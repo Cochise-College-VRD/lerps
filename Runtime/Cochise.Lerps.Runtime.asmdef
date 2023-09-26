@@ -1,0 +1,14 @@
+{
+    "name": "Cochise.Lerps.Runtime",
+    "rootNamespace": "Cochise.Lerps",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
