@@ -18,7 +18,7 @@ namespace Cochise.Lerps
             }
         }
 
-        public static IEnumerator LerpLightColor(this Light l, Color c1, Light c2, float duration)
+        public static IEnumerator LerpLightColor(this Light l, Color c1, Color c2, float duration)
         {
             float elapsedTime = 0f;
             while (elapsedTime < duration)
