@@ -5,7 +5,18 @@ namespace Cochise.Lerps
 {
     public static class ColorLerps
     {
-        public static IEnumerator LerpMaterialColor(this Material mat, Color c1, Color c2, float duration)
+        /// <summary>
+        /// Lerps a material from one color to another
+        /// over time.
+        /// 
+        /// NOTE: When trying to Lerp alpha channel
+        /// ensure the material is set to "transparent"
+        /// </summary>
+        /// <param name="c1">Starting Color</param>
+        /// <param name="c2">Ending Color</param>
+        /// <param name="duration">Duration in seconds</param>
+        /// <returns></returns>
+        public static IEnumerator LerpColor(this Material mat, Color c1, Color c2, float duration)
         {
             float elapsedTime = 0f;
             
@@ -18,7 +29,14 @@ namespace Cochise.Lerps
             }
         }
 
-        public static IEnumerator LerpLightColor(this Light l, Color c1, Color c2, float duration)
+        /// <summary>
+        /// Lerps the color of a light over time.
+        /// </summary>
+        /// <param name="c1">Starting Color</param>
+        /// <param name="c2">Ending Color</param>
+        /// <param name="duration">Duration in seconds</param>
+        /// <returns></returns>
+        public static IEnumerator LerpColor(this Light l, Color c1, Color c2, float duration)
         {
             float elapsedTime = 0f;
             while (elapsedTime < duration)
@@ -29,5 +47,7 @@ namespace Cochise.Lerps
                 yield return null;
             }
         }
+
+
     }
 }
