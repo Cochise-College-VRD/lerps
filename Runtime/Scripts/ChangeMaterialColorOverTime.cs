@@ -26,7 +26,7 @@ namespace Cochise.Lerps
         public void ChangeColor()
         {
             material.color = startColor;
-            StartCoroutine(material.LerpMaterialColor(startColor, endColor, duration));
+            StartCoroutine(material.LerpColor(startColor, endColor, duration));
         }
     }
 }
