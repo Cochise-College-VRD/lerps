@@ -19,6 +19,15 @@ namespace Cochise.Lerps
             }
         }
 
+        public static IEnumerator LerpPositionRelative(this Transform t, Vector3 offset, float duration)
+        {
+            float elapsedTime = 0f;
+            Vector3 startPos = t.localPosition;
+            Vector3 endPos = startPos + offset;
+
+            yield return t.LerpPosition(startPos, endPos, elapsedTime / duration);
+        }
+
         public static IEnumerator LerpRotation(this Transform t, Quaternion start, Quaternion end, float duration)
         {
             float elapsedTime = 0f;
