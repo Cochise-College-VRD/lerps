@@ -5,6 +5,14 @@ namespace Cochise.Lerps
 {
     public static class Vector3Lerps
     {
+        /// <summary>
+        /// Moves a transform from one position to another.
+        /// </summary>
+        /// <param name="t">The transform being modified</param>
+        /// <param name="start">The starting position.</param>
+        /// <param name="end">The end position.</param>
+        /// <param name="duration">Duration in seconds.</param>
+        /// <returns></returns>
         public static IEnumerator LerpPosition(this Transform t, Vector3 start, Vector3 end, float duration)
         {
             float elapsedTime = 0f;
@@ -19,7 +27,14 @@ namespace Cochise.Lerps
             }
         }
 
-        public static IEnumerator LerpPositionRelative(this Transform t, Vector3 offset, float duration)
+        /// <summary>
+        /// Moves a transform from one position to another over time.
+        /// </summary>
+        /// <param name="t">The transform being modified.</param>
+        /// <param name="offset">The offset from the current position.</param>
+        /// <param name="duration">Duration in seconds.</param>
+        /// <returns></returns>
+        public static IEnumerator LerpPosition(this Transform t, Vector3 offset, float duration)
         {
             float elapsedTime = 0f;
             Vector3 startPos = t.localPosition;
