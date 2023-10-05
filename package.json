@@ -9,5 +9,19 @@
 	  "name": "Cochise College, VRD",
 	  "email": "vrdprogram@cochise.edu",
 	  "url": "https://cochise.edu"
-  }
+  },
+
+  "samples":
+  [
+	{
+		"displayName":"Position Lerps",
+		"description":"Contains sample scripts for utilizing various position lerp methods.",
+		"path":"Samples~/PositionLerping"
+	},
+	{
+		"displayName": "Color Lerps",
+		"description": "Contains sample scripts for utilizing various color lerp methods",
+		"path":"Samples~/ColorLerping"
+	}
+  ]
 }
