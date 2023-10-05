@@ -48,6 +48,11 @@ namespace Cochise.Lerps
             }
         }
 
+        public static IEnumerator LerpColor(this Light l, Color c1, float duration)
+        {
+            yield return l.LerpColor(l.color, c1, duration);
+        }
+
 
     }
 }
